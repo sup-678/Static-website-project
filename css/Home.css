@@ -1,0 +1,363 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+   
+  
+  body {
+    height: 100%;
+    background-color: #ebe5dd;
+    box-sizing: border-box;
+    
+  }
+      .header{
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../images/hala.jpg);
+      background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+      }
+  .navbar-style{
+    box-shadow: 0 5px 10px #686868;
+  }
+   .logo{
+    height: 100px;
+    padding: 10px 5px;
+  } 
+  .icon-bar{
+    background-color: darkorchid;
+  }
+  li a{
+    color:black;
+  }
+  .banner-info, .banner-image{
+    margin: 30px 0;
+  }
+  /* ------------------------------------------ */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  .row {
+    margin: 8px -16px;
+  }
+  .row,
+.row > .col-md-4 {
+  padding: 8px;
+}
+  
+.col-md-4{
+  
+width: 33%;
+    padding: 5px;
+    float: left;
+}
+@media screen and (max-width: 900px) {
+    .col-md-4 {
+      width: 33%;
+    }
+  }
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  /* FOOTER */
+  .footer {
+    background: #303036;
+    color: #d3d3d3;
+    height: 400px;
+    position: relative;
+  }
+  
+  .footer .footer-bottom {
+    background-color: #343a40;
+    color: #686868;
+    text-align: center;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding-top: 20px;
+  }
+  
+  .footer .footer-content {
+    height: 350px;
+    display: flex;
+  }
+  
+  .footer .footer-content .footer-section {
+    flex: 1;
+    padding: 25px;
+  }
+  
+  .footer .footer-content h1 {
+    color: white;
+  }
+  
+  .footer-para {
+    margin: 10px 0;
+  }
+  
+  .footer .footer-content .about .contact span {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+  }
+  
+  .footer .footer-content .about .socials a {
+    border: 1px solid gray;
+    width: 45px;
+    height: 38px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #d3d3d3;
+    border-radius: 5px;
+    transition: all 0.3s;
+  }
+  
+  .footer .footer-content .about .socials a:hover {
+    color: white;
+    border: 1px solid white;
+    transition: all 0.3s;
+  }
+  
+  .footer-section {
+    text-align: center;
+  }
+  
+  .logo-text {
+    font-variant: initial;
+  }
+  
+  .logo-text .logo-span {
+    color: #a2c376;
+  }
+  
+  .con{
+    display:flex;
+    width:100%;
+    align-items:center;
+  }
+  .con img{
+    display:block;
+    width:300px;
+  }
+  .con p{
+    flex-grow:1;
+    margin:0;
+    text-align:center;
+  }
+  /* -- Section Testi -- */
+
+.section-testi {
+  background: url("../images/nachod5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  margin: 0;
+  color: white;
+  height: 300;
+  width: 300;
+}
+
+.section-testi .overlay {
+  padding: 100px;
+  background-color: rgba(2, 2, 33, 0.6);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media (max-width: 420px) {
+  .section-testi .overlay {
+    padding: 40px 20px;
+  }
+}
+
+.section-testi h3 {
+  font-family: "Pacifico";
+  font-size: 32px;
+  color: white;
+  display: block;
+}
+
+.section-testi .blockquote {
+  text-align: center;
+  position: relative;
+  margin-bottom: 1rem;
+  font-size: 15px;
+  padding-top: 30px;
+}
+
+.section-testi .head {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.section-testi .blockquote:before,
+.section-testi .blockquote:after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/quote-1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.section-testi .blockquote:after {
+  top: auto;
+  left: auto;
+  bottom: 20px;
+  right: 20px;
+  background-image: url("../images/quote-2.svg");
+}
+
+.section-testi .blockquote-user {
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 20px;
+  justify-content: center;
+
+}
+
+.section-testi .blockquote-user .blockquote-avatar {
+  width: 60px;
+  max-height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-right: 20px;
+}
+
+.section-testi .blockquote-user .blockquote-avatar img {
+  width: 100%;
+  height: 60px;
+  display: block;
+  object-fit: cover;
+}
+
+.section-testi .blockquote-user .blockquote-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 23px;
+  font-weight: bold
+}
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+  width: 65%;
+}
+@media (max-width: 420px) {
+  .swipe {
+    width: 100%;
+  }
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:20%;
+  position: relative;
+}
+
+.overlay-btn {
+  width: 100%;
+}
+
+/* -- Section News -- */
+
+.section-news .row {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 420px) {
+  .section-news .row {
+    flex-wrap: wrap;
+  }
+}
+
+.section-news .row .col,
+.section-news .row .col-2 {
+  width: calc(100% / 3);
+  position: relative;
+  max-height: 100%;
+}
+@media (max-width: 420px) {
+  .section-news .row .col,
+  .section-news .row .col-2 {
+    width: 95%;
+  }
+}
+
+.section-news .row .col-2 {
+  margin: 0 6px;
+}
+
+.section-news .row .col img,
+.section-news .row .col-2 img {
+  width: 100%;
+  height: 340px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.section-news .row .col .overlay,
+.section-news .row .col-2 .overlay {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8));
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 20px 30px;
+  color: white;
+}
+
+.section-news .row .col .overlay{
+  border-bottom: 4px solid #6BCB84;
+}
+
+.section-news .row .col-2 .overlay{
+  border-bottom: 4px solid #D3936D ;
+}
+
+.section-news .row .col .overlay .text-top,
+.section-news .row .col-2 .overlay .text-top {
+  margin-bottom: 0px;
+  color: white !important;
+}
+
+.text-top {
+  font-family: "Montserrat-Regular";
+}
+
+.text-bottom {
+  color: #f25601;
+  font-weight: bold;
+}
+
+  
+  
+  
+  
